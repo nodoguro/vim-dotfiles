@@ -76,3 +76,10 @@ set nobackup
 set noswapfile
 " シンタックスハイライト
 syntax on
+
+"---------------------------------------------------------------------------
+" プラグインのセットアップ
+"
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+call plug#end()
